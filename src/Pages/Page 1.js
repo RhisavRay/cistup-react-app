@@ -60,7 +60,9 @@ function Page1()
             <br/>
             <input type="radio" name="dist" id=">25" value=">25" onChange={distChangeHandler} checked={dist===">25"}/>
             <label htmlFor=">25">&gt;25km</label>
+            
             <br/>
+            
             <button type="submit">Submit</button>
         </form>
     )
