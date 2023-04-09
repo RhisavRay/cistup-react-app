@@ -1,9 +1,11 @@
 import { useState } from "react"
+import Page2 from "./Page 2"
 
 function Page1()
 {
     const [transMode, setTransMode] = useState("")
     const [dist, setDist] = useState("")
+    const [next, setNext] = useState(false)
 
     const transChangeHandler = (e) =>
     {
@@ -13,9 +15,25 @@ function Page1()
     {
         setDist(e.target.value)
     }
+    const nextHandler = () =>
+    {
+        if(transMode === "" || dist === "")
+        {
+            alert("Please give a resaponse to both the questions")
+        }
+        else
+        {
+            setNext(true)
+        }
+    }
+
+    if(next)
+    {
+        return <Page2/>
+    }
     
     return(
-        <form>
+        <div>
             <h3>What is your most frequently used means of travel from your home to work location?</h3>
             <input type="radio" name="trans" id="bus" value="bus" onChange={transChangeHandler} checked={transMode==="bus"}/>
             <label htmlFor="bus">Bus</label>
@@ -63,8 +81,8 @@ function Page1()
             
             <br/>
 
-            <button type="submit">Next</button>
-        </form>
+            <button onClick={nextHandler}>Next</button>
+        </div>
     )
 }
 
