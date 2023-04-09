@@ -62,8 +62,8 @@ function Page1()
             <label htmlFor=">25">&gt;25km</label>
             
             <br/>
-            
-            <button type="submit">Submit</button>
+
+            <button type="submit">Next</button>
         </form>
     )
 }
