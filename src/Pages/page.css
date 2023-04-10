@@ -34,3 +34,18 @@ table, th, td
 {
     background-color: #d6a64f;
 }
+
+.Q
+{
+    padding-left: 10px;
+}
+
+.A
+{
+    margin-left: 20px;
+}
+
+.next
+{
+    margin-left: 10px;
+}
