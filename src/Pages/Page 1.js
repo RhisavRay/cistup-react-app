@@ -19,7 +19,7 @@ function Page1()
     {
         if(transMode === "" || dist === "") /* If any of the 2 questions are unanswered, i.e, state value is null, can't proceed */
         {
-            alert("Please give a resaponse to both the questions")
+            alert("Please give a response to both the questions")
         }
         else
         {
