@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cistup-react-app/static/css/main.d70da4d8.css",
+    "main.js": "/cistup-react-app/static/js/main.f1627ccd.js",
+    "static/js/787.99277542.chunk.js": "/cistup-react-app/static/js/787.99277542.chunk.js",
+    "index.html": "/cistup-react-app/index.html",
+    "main.d70da4d8.css.map": "/cistup-react-app/static/css/main.d70da4d8.css.map",
+    "main.f1627ccd.js.map": "/cistup-react-app/static/js/main.f1627ccd.js.map",
+    "787.99277542.chunk.js.map": "/cistup-react-app/static/js/787.99277542.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d70da4d8.css",
+    "static/js/main.f1627ccd.js"
+  ]
+}
