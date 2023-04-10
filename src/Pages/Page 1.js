@@ -3,21 +3,21 @@ import Page2 from "./Page 2"
 
 function Page1()
 {
-    const [transMode, setTransMode] = useState("")
-    const [dist, setDist] = useState("")
-    const [next, setNext] = useState(false)
+    const [transMode, setTransMode] = useState("")/* State to manage mode of transport value */
+    const [dist, setDist] = useState("")/* State to manage dist value */
+    const [next, setNext] = useState(false)/* State to check if user is to be allowed to proceed to next page */
 
-    const transChangeHandler = (e) =>
+    const transChangeHandler = (e) => /* Function to handle change of transMode state */
     {
         setTransMode(e.target.value)
     }
-    const distChangeHandler = (e) =>
+    const distChangeHandler = (e) => /* Function to handle change of dist state */
     {
         setDist(e.target.value)
     }
-    const nextHandler = () =>
+    const nextHandler = () => /* Function to handle change of next state and rendering the next page */
     {
-        if(transMode === "" || dist === "")
+        if(transMode === "" || dist === "") /* If any of the 2 questions are unanswered, i.e, state value is null, can't proceed */
         {
             alert("Please give a resaponse to both the questions")
         }
@@ -29,11 +29,12 @@ function Page1()
 
     if(next)
     {
-        return <Page2/>
+        return <Page2 trans={transMode} dis={dist}/>
     }
     
     return(
         <div>
+            {/* Question 1 */}
             <h3>What is your most frequently used means of travel from your home to work location?</h3>
             <input type="radio" name="trans" id="bus" value="bus" onChange={transChangeHandler} checked={transMode==="bus"}/>
             <label htmlFor="bus">Bus</label>
@@ -59,7 +60,7 @@ function Page1()
 
             <br/><br/>
 
-
+            {/* Question 2 */}
             <h3>What is the total distance between your home and workplace?</h3>
             <input type="radio" name="dist" id="<5" value="<5" onChange={distChangeHandler} checked={dist==="<5"}/>
             <label htmlFor="<5">&lt;5km</label>
@@ -67,7 +68,7 @@ function Page1()
             <input type="radio" name="dist" id="5-10" value="5-10" onChange={distChangeHandler} checked={dist==="5-10"}/>
             <label htmlFor="5-10">5-10km</label>
             <br/>
-            <input type="radio" name="dist" id="10-15" value="1-15" onChange={distChangeHandler} checked={dist==="10-15"}/>
+            <input type="radio" name="dist" id="10-15" value="10-15" onChange={distChangeHandler} checked={dist==="10-15"}/>
             <label htmlFor="10-15">10-15km</label>
             <br/>
             <input type="radio" name="dist" id="15-20" value="15-20" onChange={distChangeHandler} checked={dist==="15-20"}/>

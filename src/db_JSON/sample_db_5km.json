@@ -1,8 +1,7 @@
-{
-    "Data": [
+[
             {
                 "Choice situation": 17.0,
-                "mode_1": "Bus Type 1",
+                "mode_1": "Bus Route 1",
                 "mode_1.ivtt": 16,
                 "mode_1.tcost": 17,
                 "mode_1.walktime": 4,
@@ -11,7 +10,7 @@
                 "mode_1.trans": 0,
                 "mode_1.crowd": 3,
                 "mode_1.serv": 1,
-                "mode_2": "Bus Type 2",
+                "mode_2": "Bus Route 2",
                 "mode_2.ivtt": 19,
                 "mode_2.tcost": 40,
                 "mode_2.walktime": 4,
@@ -85,4 +84,3 @@
                 "mode_9.serv": 0
             }
    ]
-}

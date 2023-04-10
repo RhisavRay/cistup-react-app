@@ -1,0 +1,36 @@
+table, th, td
+{
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.col1
+{
+    background-color: #e9d1cf;
+}
+
+.col2
+{
+    background-color: #e6e8b2
+}
+
+.col3
+{
+    background-color: #c4daae;
+}
+
+.col4
+{
+    background-color: #dad6f5;
+}
+
+.col5
+{
+    background-color: #cde2e7;
+}
+
+.middle-row
+{
+    background-color: #d6a64f;
+}
